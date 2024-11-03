@@ -1,0 +1,19 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.hero {
+    background: #1a1a1a;
+}
+
+section {
+    margin-top: 20px;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
