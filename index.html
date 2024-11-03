@@ -3,70 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Computer Engineering Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <title>Noble Woodall | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Name</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero bg-dark text-white text-center py-5">
-        <h1>Your Name</h1>
-        <p>Computer Engineering Student & Project Showcase</p>
-    </header>
+    <section id="hero" class="hero">
+        <h1>Noble Woodall</h1>
+        <p>Computer Engineering Student, University of Pittsburgh</p>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="container py-5">
+    <section id="about" class="content-section">
         <h2>About Me</h2>
-        <p>Brief introduction about yourself, your background, and your interests in computer engineering.</p>
+        <p>My girlfriend is better then me at CS... and grammer.</p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="container py-5">
+    <section id="projects" class="content-section">
         <h2>Projects</h2>
-        <div class="row">
-            <!-- Example Project Card -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <img src="project-image.jpg" class="card-img-top" alt="Project Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title</h5>
-                        <p class="card-text">Brief description of the project.</p>
-                        <a href="project-link.html" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
+        <div class="projects-grid">
+            <!-- Example Project Card with Image -->
+            <div class="project-card">
+                <a href="toolbox.html">
+                    <img src="images/temp_toolbox.png" alt="Project 1 Image">
+                    <h3>Hammer Time</h3>
+                    <p>Brief description of Project 1...</p>
+                </a>
             </div>
-            <!-- Add more project cards here -->
+            <div class="project-card">
+                <a href="project2.html">
+                    <img src="images/project2.jpg" alt="Project 2 Image">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of Project 2...</p>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="project2.html">
+                    <img src="images/project2.jpg" alt="Project 2 Image">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of Project 2...</p>
+                </a>
+            </div>
+            <!-- Additional projects can be added here following the same structure -->
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container py-5">
+    <section id="contact" class="content-section">
         <h2>Contact Me</h2>
         <p>If you’d like to connect, feel free to reach out!</p>
-        <a href="mailto:your.email@example.com" class="btn btn-outline-primary">Email Me</a>
+        <div class="contact-links">
+            <a href="mailto:nww12@pitt.edu" class="contact-btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/noble-woodall" target="_blank" class="contact-btn">LinkedIn</a>
+        </div>
     </section>
 
-    <footer class="text-center py-3">
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

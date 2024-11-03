@@ -1,19 +1,183 @@
-/* General Styles */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f4f4f9;
+    background-color: #181818;
+    scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+.main-nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(24, 24, 24, 0.9);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-nav a {
+    color: #f4f4f9;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #00aaff;
+}
+
+/* Hero Section */
 .hero {
-    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #333;
+    color: #00aaff;
 }
 
-section {
-    margin-top: 20px;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
-/* Card Hover Effect */
-.card:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
+.hero p {
+    font-size: 1.5rem;
+    color: #f4f4f9;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #181818;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Card Grid */
+.projects-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #252525;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Button */
+.contact-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #00aaff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background: #008ac9;
+}
+
+/* Project Grid Styles */
+.projects-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #252525;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: auto;
+}
+
+.project-card h3 {
+    color: #00aaff;
+    margin-top: 1rem;
+}
+
+.project-card p {
+    color: #bbb;
+}
+
+/* Project Detail Page Styles */
+.project-detail {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #f4f4f9;
+}
+
+.project-detail img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Contact Buttons */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #00aaff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.contact-btn:hover {
+    background: #008ac9;
 }
